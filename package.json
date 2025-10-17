@@ -8,17 +8,31 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
   },
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "packages/ui", 
+    "packages/typescript-config"
+  ],
   "devDependencies": {
     "prettier": "^3.6.2",
     "turbo": "^2.5.8",
-    "typescript": "5.9.2"
+    "typescript": "5.9.2",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.2",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.18.0"
+
+
   },
   "engines": {
     "node": ">=18"
   },
   "packageManager": "npm@10.9.2",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  "dependencies": {
+    "next": "^15.5.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
 }
