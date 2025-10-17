@@ -38,3 +38,6 @@ exec-web:
 
 exec-api:
 	docker exec -it redux-toolkit-practice-api-1 sh
+
+db:
+	psql -h localhost -p 5432 -U user -d mydb

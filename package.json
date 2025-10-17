@@ -1,5 +1,5 @@
 {
-  "name": "Redux-Toolkit-Practice",
+  "name": "redux-toolkit-practice",
   "private": true,
   "scripts": {
     "build": "turbo run build",
